@@ -1,0 +1,14 @@
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\bin\Debug\net6.0\OMEGA.DAL.deps.json
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\bin\Debug\net6.0\OMEGA.DAL.runtimeconfig.json
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\bin\Debug\net6.0\OMEGA.DAL.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\bin\Debug\net6.0\OMEGA.DAL.pdb
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.csproj.AssemblyReference.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.AssemblyInfoInputs.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.AssemblyInfo.cs
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.csproj.CoreCompileInputs.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\refint\OMEGA.DAL.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.pdb
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\OMEGA.DAL.genruntimeconfig.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.DAL\obj\Debug\net6.0\ref\OMEGA.DAL.dll

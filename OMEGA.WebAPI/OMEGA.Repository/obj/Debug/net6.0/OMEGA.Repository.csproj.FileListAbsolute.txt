@@ -1,0 +1,17 @@
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.Repository.deps.json
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.Repository.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.Repository.pdb
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.Core.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.DAL.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.Core.pdb
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\bin\Debug\net6.0\OMEGA.DAL.pdb
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.csproj.AssemblyReference.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.AssemblyInfoInputs.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.AssemblyInfo.cs
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.csproj.CoreCompileInputs.cache
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.csproj.CopyComplete
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\refint\OMEGA.Repository.dll
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\OMEGA.Repository.pdb
+C:\Arya\MVC\OMEGA.WebAPI\OMEGA.Repository\obj\Debug\net6.0\ref\OMEGA.Repository.dll

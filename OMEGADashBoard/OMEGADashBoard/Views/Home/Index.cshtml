@@ -1,0 +1,184 @@
+﻿@model OMEGADashBoard.Models.Dashboard
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      .button-style {
+          border: none;
+          background-color: transparent;
+          font-size: 28px;
+          color: white;
+
+      }
+      .table-bordered th, .table-bordered td {
+          border: 1px solid #000000;
+          padding:10px;
+      }
+  </style>
+</head>
+<body>
+
+  
+   
+
+
+    <div class="content-wrapper pb-0">
+
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+
+            <div class="page-header flex-wrap">
+                @*<h3 class="mb-0">
+                    Hi, welcome back! <span class="pl-0 h6 pl-sm-2 text-muted d-inline-block">Your web analytics dashboard template.</span>
+                </h3>*@
+
+                <div class="d-flex">
+                    <label for="fromdate">From Date</label>
+                    <input type="date" id="FromDate" name="FromDate" placeholder="FromDate" value="2022-01-01" class="btn btn-sm bg-white btn-icon-text border ml-3" />
+                    <label for="todate">To Date</label>
+                    <input type="date" id="ToDate" name="ToDate" placeholder="ToDate" value="2023-01-01" class="btn btn-sm bg-white btn-icon-text border ml-3" />
+
+
+
+                    <input type="hidden" id="Type" value="0" name="Type">
+
+                    <input type="hidden" id="FormType" value="" name="FormType">
+                    <button type="submit" class="btn btn-sm ml-3 btn-success" onclick="document.getElementById('FormType').value=1"> Search </button>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-xl-4 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3" id="1">
+
+
+                    <div class="card bg-danger">
+                        <div class="card-body px-3 py-4">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="color-card">
+                                    <p class="mb-0 color-card-head">Unassigned Orders</p>
+
+                                    @*$5,300.<span class="h5">00</span>*@
+                                    @if (Model.UnassignedCount != null)
+                                    {
+                                        <button type="submit" class="button-style" onclick="firstDivFunction(1)">
+                                            @Model.UnassignedCount
+                                        </button>
+                                    }
+
+
+                                </div>
+                                <i class="card-icon-indicator mdi mdi-cube-outline bg-inverse-icon-danger"></i>
+                            </div>
+                            <h6 class="text-white">13.21% Since last month</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-4 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3 pb-lg-0 pb-xl-3" id="2">
+
+                    <div class="card bg-primary">
+                        <div class="card-body px-3 py-4">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="color-card">
+                                    <p class="mb-0 color-card-head">Assigned Orders</p>
+                                    @if (Model.AssignedCount != null)
+                                    {
+                                        <button type="submit" class="button-style" onclick="firstDivFunction(2)">
+                                            @Model.AssignedCount
+                                        </button>
+                                    }
+                                </div>
+                                <i class="card-icon-indicator mdi mdi-briefcase-outline bg-inverse-icon-primary"></i>
+                            </div>
+                            <h6 class="text-white">67.98% Since last month</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3" id="3">
+
+                    <div class="card bg-success">
+                        <div class="card-body px-3 py-4">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="color-card">
+                                    <p class="mb-0 color-card-head">Total Orders</p>
+                                    @if (Model.TotalCount != null)
+                                    {
+                                        <button type="submit" class="button-style" onclick="firstDivFunction(3)">
+                                            @Model.TotalCount
+                                        </button>
+                                    }
+                                </div>
+                                <i class="card-icon-indicator mdi mdi-account-circle bg-inverse-icon-success"></i>
+                            </div>
+                            <h6 class="text-white">20.32% Since last month</h6>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="col-xl-3 col-lg-12 stretch-card grid-margin">
+                    <div class="row">
+
+
+
+                    </div>
+                </div>*@
+            </div>
+
+        }
+
+        @if (ViewBag.OrderDetails != null)
+        {
+            <div class="row table-bordered th table-bordered td ">
+                <table>
+                    <tr>
+                        <th>Order Id</th>
+                        <th>Client</th>
+                        <th>Sub Client</th>
+                        <th>Order Date</th>
+                        <th>Subject Address</th>
+                        <th>Portal</th>
+                        <th>Ordertype</th>
+                        <th>Status</th>
+                        <th>Status Reason</th>
+                        <th>Picture Status</th>
+                    </tr>
+
+
+
+                    @foreach (OMEGADashBoard.Models.OrderDetails orderDetails in ViewBag.OrderDetails)
+                    {
+                        <tr>
+                            <td>@orderDetails.OrderId</td>
+                            <td>@orderDetails.FullName</td>
+                            <td>@orderDetails.Subclient</td>
+                            <td>@orderDetails.OrderDate</td>
+                            <td>@orderDetails.Subjectaddress</td>
+                            <td>@orderDetails.Portalname</td>
+                            <td>@orderDetails.Ordertypename</td>
+                            <td>@orderDetails.StatusDesc</td>
+                            <td>@orderDetails.StatusReasonDesc</td>
+                            <td>@orderDetails.PhotoReqStatusDesc</td>
+                        </tr>
+
+                    }
+
+
+                </table>
+            </div>
+        }
+    </div>
+        
+
+    <script>
+        function firstDivFunction(Type){
+            document.getElementById("Type").value = Type;
+            document.getElementById('FormType').value = 2;
+        }
+       
+    </script>
+
+</body>
+</html>
